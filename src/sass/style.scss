@@ -1,10 +1,4 @@
-$cor: #DDD;
-$color2: white;
-body{
-	background: $cor;
-	font-size: 500%;
-}
+@import 'main';
+@import 'reset';
 
-h1{
-	color: $color2;
-}
+@import 'home';
