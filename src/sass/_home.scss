@@ -1,0 +1,25 @@
+$img_responsive : 100%;
+
+ul{
+	list-style: none;
+}
+
+nav ul li{
+	float: left;
+}
+
+#logo img{
+	width: 100%;
+	max-width: 128px;
+}
+
+ul li img{
+	width: $img_responsive;
+}
+
+
+@media only screen and (max-width: 40em) {
+	dd{
+		width: calc(100% / 3);
+	}	
+}

@@ -229,3 +229,20 @@ fieldset {
  */
 textarea {
   overflow: auto; }
+
+ul {
+  list-style: none; }
+
+nav ul li {
+  float: left; }
+
+#logo img {
+  width: 100%;
+  max-width: 128px; }
+
+ul li img {
+  width: 100%; }
+
+@media only screen and (max-width: 40em) {
+  dd {
+    width: calc(100% / 3); } }
