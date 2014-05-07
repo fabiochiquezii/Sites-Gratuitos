@@ -65,6 +65,7 @@ video {
 
 a {
   background: transparent;
+  @include single-transition($speed:150ms);
 }
 
 /**
@@ -306,4 +307,8 @@ fieldset {
 
 textarea {
   overflow: auto;
+}
+
+a{
+  
 }

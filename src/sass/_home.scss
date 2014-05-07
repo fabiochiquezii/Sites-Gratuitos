@@ -1,25 +1,392 @@
-$img_responsive : 100%;
+/* fonts */
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: url('fonts/robotocondensed-bold-webfont.eot');
+    src: url('fonts/robotocondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/robotocondensed-bold-webfont.woff') format('woff'),
+         url('fonts/robotocondensed-bold-webfont.ttf') format('truetype'),
+         url('fonts/robotocondensed-bold-webfont.svg#roboto_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans-regular-webfont.woff') format('woff'),
+         url('fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* icomoon */
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon/icomoon.eot');
+	src:url('fonts/icomoon/.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon/icomoon.woff') format('woff'),
+		url('fonts/icomoon/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-home:before {
+	content: "\e600";
+}
+.icon-camera:before {
+	content: "\e601";
+}
+.icon-book:before {
+	content: "\e602";
+}
+.icon-phone:before {
+	content: "\e603";
+}
+.icon-envelope:before {
+	content: "\e604";
+}
+.icon-screen:before {
+	content: "\e605";
+}
+.icon-skype:before {
+	content: "\e606";
+}
+.icon-linkedin:before {
+	content: "\e607";
+}
+.icon-tumblr:before {
+	content: "\e608";
+}
+.icon-twitter:before {
+	content: "\e609";
+}
+.icon-facebook:before {
+	content: "\e60a";
+}
+.icon-facebook2:before {
+	content: "\e60b";
+}
+.icon-wrench:before {
+	content: "\e60c";
+}
+.icon-pencil:before {
+	content: "\e60d";
+}
+.icon-pencil2:before {
+	content: "\e60e";
+}
+
+/* alguns resets meus */
 ul{
 	list-style: none;
 }
 
-nav ul li{
-	float: left;
+h1{
+	font-family: 'roboto_condensedbold';
 }
 
-#logo img{
-	width: 100%;
-	max-width: 128px;
+span{
+	font-family: 'roboto_condensedbold';
 }
+
+p{
+	font-family: 'open_sansregular';
+}
+
+.titulo{
+	margin-top: 2em;
+	margin-bottom: 2em;
+
+
+	h3{
+		font-size: 2em;
+		font-family: 'roboto_condensedbold';
+	}
+}
+
+dd a{
+	/* entorta um pouco em devices mto pequenos
+	border-left: 1px solid rgba(0,0,0,0.1);
+	*/
+}
+
+
+/* Header */
+header{
+	background-color: $bodybg;
+
+	#topbar{
+		#logo{
+			margin-top:1.5em;
+			margin-bottom: 2em;
+
+			img{
+				width: 100%;
+			}
+		}
+
+		nav {
+			#pull{
+				background: $treecolor;
+				padding-top: 0.75em;
+				padding-bottom: 0.75em;
+				font-size: 1.5em;
+				margin-bottom: 1em;
+
+				a{
+					color: white;
+				}
+			}
+
+			ul{
+				padding: 0px;
+				margin: 0px;
+
+				li{
+					text-align: center;
+					background: $treecolor;
+					border-bottom: 1px solid rgba(255,255,255,0.05);
+					padding-top:0.75em;
+					padding-bottom: 0.75em;
+					@include single-transition($speed:0.3s);
+
+					a{
+						color: $bodybg;
+					}
+				}
+			}
+		}
+	}
+	
+
+	#header_content{
+		clear: both;
+	}
+
+	#foto_destaque{
+		margin-top: 0.67em;
+	}
+}
+
+section#instrucoes{
+
+	.big{
+		font-weight: bold;
+		font-size: 2em;
+	}
+
+	#pedir{
+		margin-top: 3em;
+
+		.btn{
+			font-size: 1.1em;
+			background: $bodybg;
+			padding: 1em 1.25em;
+			color: $onecolor;
+			border-radius: 8px;
+
+			&:active{
+				position: relative;
+				top: 2px;
+			}
+		}
+	}
+}
+
+div#separacao{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+section#trabalhos{
+	margin-bottom: 50px;
+
+	#portfolio{
+		ul{
+			li{
+				margin-top: 1.5em;
+
+				span{
+					font-size: 1.5em;
+					border-bottom: 2px solid black;
+					padding-bottom: 1px;
+					margin-bottom: 10px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+footer{
+	background: $onecolor;
+	color:white;
+
+	#social{
+		margin-top:2em;
+		ul{
+			li{
+				font-size: 1.5em;
+
+				a{
+					color: $bodybg;
+
+					&:active{
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* portfólio */
 
 ul li img{
 	width: $img_responsive;
 }
 
 
+/* mediaqueries */
 @media only screen and (max-width: 40em) {
+	nav{
+		ul{
+			display: none;
+
+			li{
+				width: 100%;
+			}
+		}
+	} 
+
 	dd{
 		width: calc(100% / 3);
+		margin-left: 0px;
 	}	
+}
+
+@media only screen and (min-width: 40em) {
+	header{
+		#topbar{
+			nav{
+				ul{
+					float: right;
+					margin-right: 2em;
+					border-right: 2px solid $onecolor;
+					border-bottom: 2px solid $onecolor;
+
+					li{
+						font-size: 1.1em;
+						float: left;
+						margin-left: 20px;
+						background: transparent;
+						padding-top:1.5em;
+						border-bottom: 2px solid transparent;
+
+							&:hover{
+								border-bottom: 2px solid red;
+							}
+
+							&:last-child{
+								padding-right: 1em;
+							}
+
+						a{
+							color: $onecolor;
+						
+							&:active{
+								color: red;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	dd{
+		margin-left: 1.5em;
+		
+
+		&:first-child{
+			margin-left: 0px;
+		}
+	}
+
+	#instrucoes{
+		#content_instrucoes{
+			.tabs-content{
+				#pt1{
+					img{
+						/*
+						float: right;
+						width: 100%;
+						*/
+					}
+				}
+				#pt2{
+					div{
+						margin-top: 2.5em;
+					}
+				}
+			}
+		}
+	}
+
+
+	section#trabalhos{
+
+		#portfolio{
+			ul{
+				li{
+
+					span{
+						font-size: 1em;
+					}
+				}
+			}
+		}
+	}
+
+	.esquerda{
+		width: 10%;
+		float: left;
+	}
+
+	.direita{
+		text-align: left;
+	}
+
+	#direitos{
+		padding-top: 2em;
+	}
+
+}
+
+@media only screen and (min-width: 64.063em) {
+/* min-width 1025px, large screens */
+
+
 }
