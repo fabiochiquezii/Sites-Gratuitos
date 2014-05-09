@@ -317,7 +317,9 @@ ul {
   list-style: none; }
 
 h1 {
-  font-family: 'roboto_condensedbold'; }
+  font-family: 'roboto_condensedbold';
+  color: red;
+  text-shadow: -2px 2px rgba(0, 0, 0, 0.16); }
 
 span {
   font-family: 'roboto_condensedbold'; }
@@ -357,7 +359,7 @@ header {
     header #topbar nav ul li {
       text-align: center;
       background: #000;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       padding-top: 0.75em;
       padding-bottom: 0.75em;
       transition: all 0.3s ease-out; }
@@ -373,7 +375,8 @@ section#instrucoes .big {
   font-weight: bold;
   font-size: 2em; }
 section#instrucoes #content_instrucoes dl dd a {
-  padding: 1em 2em; }
+  padding: 1em 2em;
+  text-shadow: -1px 1px rgba(0, 0, 0, 0.2); }
 section#instrucoes #pedir {
   margin-top: 3em; }
   section#instrucoes #pedir .btn {
@@ -381,7 +384,9 @@ section#instrucoes #pedir {
     background: #fef77a;
     padding: 1em 1.25em;
     color: #2c2626;
-    border-radius: 8px; }
+    border-radius: 8px;
+    box-shadow: -4px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.2); }
     section#instrucoes #pedir .btn:active {
       position: relative;
       top: 2px; }
@@ -430,10 +435,11 @@ versão mobile
     display: none; }
     nav ul li {
       width: 100%; }
-  dd {
+  dl dd {
     width: calc(100% / 3);
-    margin-left: 0px; }
-    dd a {
+    margin-left: 0px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.4); }
+    dl dd a {
       font-size: 90%; } }
 
 /************************************
@@ -483,8 +489,8 @@ versão tablets
   header #topbar nav ul {
     float: right;
     margin-right: 2em;
-    border-right: 2px solid #2c2626;
-    border-bottom: 2px solid #2c2626;
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
     padding-right: 1em; }
     header #topbar nav ul li {
       font-size: 1.1em;
@@ -500,6 +506,12 @@ versão tablets
 							*/ }
       header #topbar nav ul li:hover {
         border-bottom: 2px solid red; }
+      header #topbar nav ul li .atual {
+        background: red;
+        color: #fef77a;
+        padding: 5px 10px;
+        box-shadow: -4px 4px rgba(0, 0, 0, 0.2);
+        text-shadow: -2px 2px rgba(0, 0, 0, 0.2); }
       header #topbar nav ul li a {
         color: #2c2626; }
         header #topbar nav ul li a:active {
@@ -508,7 +520,8 @@ versão tablets
     margin-top: 1em;
     margin-bottom: 1em; }
   section#instrucoes #content_instrucoes dl dd {
-    margin-left: 1.5em; }
+    margin-left: 1.5em;
+    box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.2); }
     section#instrucoes #content_instrucoes dl dd:first-child {
       margin-left: 0px; }
     section#instrucoes #content_instrucoes dl dd a {
@@ -553,7 +566,8 @@ versão desktop
     section#trabalhos #portfolio ul li {
       padding: 0px;
       margin-left: 5%;
-      width: 30%; }
+      width: 30%;
+      box-shadow: -8px 8px rgba(0, 0, 0, 0.2); }
       section#trabalhos #portfolio ul li:first-child {
         margin-left: 0px; }
       section#trabalhos #portfolio ul li img {

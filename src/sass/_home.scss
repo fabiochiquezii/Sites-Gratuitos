@@ -104,6 +104,8 @@ ul{
 
 h1{
 	font-family: 'roboto_condensedbold';
+	color: red;
+	text-shadow: -2px 2px rgba(0,0,0,0.16);
 }
 
 span{
@@ -164,7 +166,7 @@ header{
 				li{
 					text-align: center;
 					background: $treecolor;
-					border-bottom: 1px solid rgba(255,255,255,0.05);
+					border-bottom: 1px solid rgba(255,255,255,0.2);
 					padding-top:0.75em;
 					padding-bottom: 0.75em;
 					@include single-transition($speed:0.3s);
@@ -201,6 +203,7 @@ section#instrucoes{
 			dd{
 				a{
 					padding: 1em 2em;
+					text-shadow: -1px 1px rgba(0,0,0,0.2);
 				}
 			}
 		}
@@ -215,6 +218,8 @@ section#instrucoes{
 			padding: 1em 1.25em;
 			color: $onecolor;
 			border-radius: 8px;
+			box-shadow: -4px 4px rgba(0,0,0,0.2);
+			text-shadow: -1px 1px 0px rgba(0,0,0,0.2);
 
 			&:active{
 				position: relative;
@@ -304,12 +309,15 @@ versão mobile
 		}
 	} 
 
-	dd{
-		width: calc(100% / 3);
-		margin-left: 0px;
+	dl{
+		dd{
+			width: calc(100% / 3);
+			margin-left: 0px;
+			box-shadow: 0px 4px 0px rgba(0,0,0,0.4);
 
-		a{
-			font-size: 90%;	
+			a{
+				font-size: 90%;	
+			}
 		}
 	}	
 }
@@ -413,8 +421,8 @@ versão tablets
 				ul{
 					float: right;
 					margin-right: 2em;
-					border-right: 2px solid $onecolor;
-					border-bottom: 2px solid $onecolor;
+					border-right: 2px solid rgba(0,0,0,0.5);
+					border-bottom: 2px solid rgba(0,0,0,0.5);
 					padding-right: 1em;
 
 					li{
@@ -435,8 +443,17 @@ versão tablets
 							}
 							*/
 
+						.atual{
+							background: rgb(255,0,0);
+							color: $bodybg;
+							padding: 5px 10px;
+							box-shadow: -4px 4px rgba(0,0,0,0.2);
+							text-shadow: -2px 2px rgba(0,0,0,0.2);
+						}
+
 						a{
 							color: $onecolor;
+							
 						
 							&:active{
 								color: red;
@@ -459,6 +476,7 @@ versão tablets
 			dl{
 				dd{
 					margin-left: 1.5em;
+					box-shadow: -3px 3px 0px rgba(0,0,0,0.2);
 		
 					&:first-child{
 						margin-left: 0px;
@@ -575,6 +593,7 @@ versão desktop
 					padding: 0px;
 					margin-left:5%;
 					width: 30%;
+					box-shadow: -8px 8px rgba(0,0,0,0.2);
 
 						&:first-child{
 							margin-left: 0px;

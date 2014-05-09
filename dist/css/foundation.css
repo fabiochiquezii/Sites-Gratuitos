@@ -2508,8 +2508,19 @@ div.switch {
       .tabs dd > a:hover {
         background: #e1e1e1; }
       */
-    .tabs dd.active a {
-      background: #efefef; }
+    .tabs dd.active a {  
+      
+      background:#efefef;
+      text-shadow: -4px 4px rgba(0,0,0,1);
+      }
+
+      @media only screen and (min-width: 40em) {
+        .tabs dd.active a {
+          background: red;
+          color:#fef77a;
+          font-weight: bold;
+        }
+      }
   .tabs.radius dd:first-child a {
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px; }
