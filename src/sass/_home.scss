@@ -399,6 +399,14 @@ versão tablets
 ************************************/
 
 @media only screen and (min-width: 40em) {
+	/*
+	.titulo{
+		h3{
+			text-decoration: underline;
+		}
+	}
+	*/
+
 	header{
 		#topbar{
 			nav{
@@ -407,6 +415,7 @@ versão tablets
 					margin-right: 2em;
 					border-right: 2px solid $onecolor;
 					border-bottom: 2px solid $onecolor;
+					padding-right: 1em;
 
 					li{
 						font-size: 1.1em;
@@ -419,10 +428,12 @@ versão tablets
 							&:hover{
 								border-bottom: 2px solid red;
 							}
-
+							
+							/*
 							&:last-child{
 								padding-right: 1em;
 							}
+							*/
 
 						a{
 							color: $onecolor;
@@ -435,6 +446,12 @@ versão tablets
 				}
 			}
 		}
+
+		#header_content{
+			margin-top: $treemargin;
+			margin-bottom: $treemargin;
+		}
+
 	}
 
 	section#instrucoes{
@@ -550,6 +567,8 @@ versão desktop
 /* min-width 1025px, large screens */
 
 	section#trabalhos{
+		margin-bottom: 75px;
+
 		#portfolio{
 			ul{
 				li{
@@ -576,7 +595,7 @@ versão desktop
 				#pt1{
 
 					.top01{
-						margin-top: $fivemargin;
+						margin-top: $treemargin;
 					}
 
 					img{
@@ -642,7 +661,7 @@ versão desktop
 
 	.content_mask{
 		position: absolute;
-		top: 40%;
+		top: 37.5%;
 		width: 100%;
 		text-align: center;
 

@@ -473,26 +473,40 @@ versão tablets
 *************************************
 ************************************/
 @media only screen and (min-width: 40em) {
+  /*
+	.titulo{
+		h3{
+			text-decoration: underline;
+		}
+	}
+	*/
   header #topbar nav ul {
     float: right;
     margin-right: 2em;
     border-right: 2px solid #2c2626;
-    border-bottom: 2px solid #2c2626; }
+    border-bottom: 2px solid #2c2626;
+    padding-right: 1em; }
     header #topbar nav ul li {
       font-size: 1.1em;
       float: left;
       margin-left: 20px;
       background: transparent;
       padding-top: 1.5em;
-      border-bottom: 2px solid transparent; }
+      border-bottom: 2px solid transparent;
+      /*
+							&:last-child{
+								padding-right: 1em;
+							}
+							*/ }
       header #topbar nav ul li:hover {
         border-bottom: 2px solid red; }
-      header #topbar nav ul li:last-child {
-        padding-right: 1em; }
       header #topbar nav ul li a {
         color: #2c2626; }
         header #topbar nav ul li a:active {
           color: red; }
+  header #header_content {
+    margin-top: 1em;
+    margin-bottom: 1em; }
   section#instrucoes #content_instrucoes dl dd {
     margin-left: 1.5em; }
     section#instrucoes #content_instrucoes dl dd:first-child {
@@ -534,17 +548,19 @@ versão desktop
 ************************************/
 @media only screen and (min-width: 64.063em) {
   /* min-width 1025px, large screens */
-  section#trabalhos #portfolio ul li {
-    padding: 0px;
-    margin-left: 5%;
-    width: 30%; }
-    section#trabalhos #portfolio ul li:first-child {
-      margin-left: 0px; }
-    section#trabalhos #portfolio ul li img {
-      width: 100%;
-      height: 100%; }
+  section#trabalhos {
+    margin-bottom: 75px; }
+    section#trabalhos #portfolio ul li {
+      padding: 0px;
+      margin-left: 5%;
+      width: 30%; }
+      section#trabalhos #portfolio ul li:first-child {
+        margin-left: 0px; }
+      section#trabalhos #portfolio ul li img {
+        width: 100%;
+        height: 100%; }
   section#instrucoes #content_instrucoes .tabs-content #pt1 .top01 {
-    margin-top: 2em; }
+    margin-top: 1em; }
   section#instrucoes #content_instrucoes .tabs-content #pt2 div {
     margin-top: 2.5em; }
   section#instrucoes #content_instrucoes .tabs-content #pt2 .top02 {
@@ -579,7 +595,7 @@ versão desktop
     opacity: 1; }
   .content_mask {
     position: absolute;
-    top: 40%;
+    top: 37.5%;
     width: 100%;
     text-align: center;
     transform: scale(0);
