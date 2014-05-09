@@ -332,6 +332,8 @@ p {
     font-size: 2em;
     font-family: 'roboto_condensedbold'; }
 
+ul li img {
+  width: 100%; }
 
 /* Header */
 header {
@@ -366,9 +368,12 @@ header {
   header #foto_destaque {
     margin-top: 0.67em; }
 
+/* section instruções */
 section#instrucoes .big {
   font-weight: bold;
   font-size: 2em; }
+section#instrucoes #content_instrucoes dl dd a {
+  padding: 1em 2em; }
 section#instrucoes #pedir {
   margin-top: 3em; }
   section#instrucoes #pedir .btn {
@@ -381,10 +386,12 @@ section#instrucoes #pedir {
       position: relative;
       top: 2px; }
 
+/* section separação */
 div#separacao {
   margin-top: 50px;
   margin-bottom: 50px; }
 
+/* section trabalhos */
 section#trabalhos {
   margin-bottom: 50px; }
   section#trabalhos #portfolio ul li {
@@ -396,6 +403,7 @@ section#trabalhos {
       margin-bottom: 10px;
       text-align: center; }
 
+/* section footer */
 footer {
   background: #2c2626;
   color: white; }
@@ -409,10 +417,14 @@ footer {
           color: white; }
 
 /* portfólio */
-ul li img {
-  width: 100%; }
-
 /* mediaqueries */
+/************************************
+*************************************
+*************************************
+versão mobile
+*************************************
+*************************************
+************************************/
 @media only screen and (max-width: 40em) {
   nav ul {
     display: none; }
@@ -420,8 +432,46 @@ ul li img {
       width: 100%; }
   dd {
     width: calc(100% / 3);
-    margin-left: 0px; } }
+    margin-left: 0px; }
+    dd a {
+      font-size: 90%; } }
 
+/************************************
+*************************************
+*************************************
+versão mobile (iphone 3-5)
+*************************************
+*************************************
+************************************/
+@media only screen and (max-width: 360px) {
+  .titulo h3 {
+    font-size: 1.5em; }
+  dd a {
+    font-size: 70%; }
+  p {
+    font-size: 80%; }
+  a {
+    font-size: 85%; }
+  h1 {
+    font-size: 150%; }
+  header .row #wrap1 #logo {
+    width: 60%; }
+  header .row #header_content {
+    width: 90%; }
+  section#instrucoes .row #content_instrucoes dl {
+    width: 100%; }
+  #separacao {
+    display: none; }
+  section#trabalhos #portfolio #web ul li span {
+    font-size: 1.2em; } }
+
+/************************************
+*************************************
+*************************************
+versão tablets
+*************************************
+*************************************
+************************************/
 @media only screen and (min-width: 40em) {
   header #topbar nav ul {
     float: right;
@@ -443,19 +493,25 @@ ul li img {
         color: #2c2626; }
         header #topbar nav ul li a:active {
           color: red; }
-  dd {
+  section#instrucoes #content_instrucoes dl dd {
     margin-left: 1.5em; }
-    dd:first-child {
+    section#instrucoes #content_instrucoes dl dd:first-child {
       margin-left: 0px; }
-  #instrucoes #content_instrucoes .tabs-content {
+    section#instrucoes #content_instrucoes dl dd a {
+      padding: 0.7em 1em; }
+  section#instrucoes #content_instrucoes .tabs-content {
     margin-top: 2em; }
-    #instrucoes #content_instrucoes .tabs-content #pt2 {
+    section#instrucoes #content_instrucoes .tabs-content .top01 {
+      margin-top: 0px; }
+    section#instrucoes #content_instrucoes .tabs-content #pt2 {
       float: left; }
-      #instrucoes #content_instrucoes .tabs-content #pt2 div {
+      section#instrucoes #content_instrucoes .tabs-content #pt2 div {
         margin-top: 2.5em; }
-      #instrucoes #content_instrucoes .tabs-content #pt2 img {
+      section#instrucoes #content_instrucoes .tabs-content #pt2 img {
         float: left; }
-    #instrucoes #content_instrucoes .tabs-content #pedir {
+      section#instrucoes #content_instrucoes .tabs-content #pt2 .top02 {
+        margin-top: 2.5em; }
+    section#instrucoes #content_instrucoes .tabs-content #pedir {
       margin-top: 5em; }
   section#trabalhos #portfolio ul li span {
     font-size: 1.25em;
@@ -469,6 +525,13 @@ ul li img {
   .direita {
     text-align: left; } }
 
+/************************************
+*************************************
+*************************************
+versão desktop
+*************************************
+*************************************
+************************************/
 @media only screen and (min-width: 64.063em) {
   /* min-width 1025px, large screens */
   section#trabalhos #portfolio ul li {
@@ -480,6 +543,14 @@ ul li img {
     section#trabalhos #portfolio ul li img {
       width: 100%;
       height: 100%; }
+  section#instrucoes #content_instrucoes .tabs-content #pt1 .top01 {
+    margin-top: 2em; }
+  section#instrucoes #content_instrucoes .tabs-content #pt2 div {
+    margin-top: 2.5em; }
+  section#instrucoes #content_instrucoes .tabs-content #pt2 .top02 {
+    margin-top: 4.5em; }
+  section#instrucoes #content_instrucoes .tabs-content #pedir {
+    margin-top: 5em; }
   .view {
     position: relative;
     overflow: hidden; }
@@ -496,7 +567,7 @@ ul li img {
     -o-transform: translate(200px, 250px) rotate(45deg);
     -ms-transform: translate(200px, 250px) rotate(45deg);
     transform: translate(200px, 250px) rotate(45deg);
-    transition: all 50ms ease-out; }
+    transition: all 200ms ease-out; }
   .view:hover .mask {
     -webkit-transform: translate(0px, 0px) rotate(0deg);
     -moz-transform: translate(0px, 0px) rotate(0deg);
@@ -504,18 +575,18 @@ ul li img {
     -ms-transform: translate(0px, 0px) rotate(0deg);
     transform: translate(0px, 0px) rotate(0deg);
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=60);
-    opacity: 0.6; }
+    filter: alpha(opacity=100);
+    opacity: 1; }
   .content_mask {
     position: absolute;
     top: 40%;
     width: 100%;
     text-align: center;
-    -webkit-transform: translate(200px, 0px) rotate(0deg);
-    -moz-transform: translate(200px, 0px) rotate(0deg);
-    -o-transform: translate(200px, 0px) rotate(0deg);
-    -ms-transform: translate(200px, 0px) rotate(0deg);
-    transform: translate(200px, 0px) rotate(0deg);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
     transition: all 150ms ease-out;
     -webkit-transition-delay: 0.2s;
     -moz-transition-delay: 0.4s;
@@ -523,8 +594,8 @@ ul li img {
     -ms-transition-delay: 0.4s;
     transition-delay: 0.2s; }
   .view:hover .content_mask {
-    -webkit-transform: translate(0px, 0px) rotate(0deg);
-    -moz-transform: translate(0px, 0px) rotate(0deg);
-    -o-transform: translate(0px, 0px) rotate(0deg);
-    -ms-transform: translate(0px, 0px) rotate(0deg);
-    transform: translate(0px, 0px) rotate(0deg); } }
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); } }

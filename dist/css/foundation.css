@@ -2503,9 +2503,7 @@ div.switch {
       display: block;
       background: #fef77a;
       color: #222222;
-      padding: 1rem 2rem;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-      font-size: 1rem; }
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
       /*
       .tabs dd > a:hover {
         background: #e1e1e1; }
