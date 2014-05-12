@@ -332,7 +332,8 @@ p {
   margin-bottom: 2em; }
   .titulo h3 {
     font-size: 2em;
-    font-family: 'roboto_condensedbold'; }
+    font-family: 'roboto_condensedbold';
+    text-shadow: -2px 2px rgba(0, 0, 0, 0.2); }
 
 ul li img {
   width: 100%; }
@@ -365,7 +366,7 @@ header {
       transition: all 0.3s ease-out; }
       header #topbar nav ul li a {
         color: #fef77a; }
-  header #header_content {
+  header .header_content {
     clear: both; }
   header #foto_destaque {
     margin-top: 0.67em; }
@@ -452,8 +453,12 @@ versão mobile (iphone 3-5)
 @media only screen and (max-width: 360px) {
   .titulo h3 {
     font-size: 1.5em; }
-  dd a {
-    font-size: 70%; }
+  dd {
+    font-size: 75%; }
+    dd a {
+      font-size: 70%; }
+  b {
+    font-size: 80%; }
   p {
     font-size: 80%; }
   a {
@@ -462,7 +467,7 @@ versão mobile (iphone 3-5)
     font-size: 150%; }
   header .row #wrap1 #logo {
     width: 60%; }
-  header .row #header_content {
+  header .row .header_content {
     width: 90%; }
   section#instrucoes .row #content_instrucoes dl {
     width: 100%; }
@@ -516,7 +521,7 @@ versão tablets
         color: #2c2626; }
         header #topbar nav ul li a:active {
           color: red; }
-  header #header_content {
+  header .header_content {
     margin-top: 1em;
     margin-bottom: 1em; }
   section#instrucoes #content_instrucoes dl dd {
@@ -629,3 +634,61 @@ versão desktop
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1); } }
+
+/************************************
+*************************************
+*************************************
+versão tablets
+*************************************
+*************************************
+************************************/
+label {
+  font-size: 1.2em; }
+
+.submit {
+  font-size: 1.1em;
+  background: #fef77a;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  color: #2c2626;
+  border-radius: 8px;
+  box-shadow: -4px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 2em;
+  transition: all 0.3s ease-out; }
+  .submit:hover {
+    opacity: 0.7; }
+
+.titulo_esquerda h3 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4); }
+
+section#contato {
+  margin-bottom: 50px; }
+
+@media only screen and (min-width: 40em) {
+  #contato_content {
+    margin-bottom: 3.5em; } }
+
+/************************************
+*************************************
+*************************************
+Versão tablets mais
+*************************************
+*************************************
+************************************/
+.titulo_port {
+  margin-top: 3em;
+  margin-bottom: 0.5em; }
+  .titulo_port h3 {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    font-size: 2em;
+    font-family: 'roboto_condensedbold';
+    text-shadow: -2px 2px rgba(0, 0, 0, 0.2);
+    margin: 0px; }
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #trabalhos .row .meusprojetos01 {
+    margin-top: 2em; }
+  #trabalhos .row .meusprojetos02 .portfolio02 {
+    margin-top: 1em; } }

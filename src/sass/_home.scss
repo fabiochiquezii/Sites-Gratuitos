@@ -124,6 +124,7 @@ p{
 	h3{
 		font-size: 2em;
 		font-family: 'roboto_condensedbold';
+		text-shadow: -2px 2px rgba(0,0,0,0.2);
 	}
 }
 
@@ -180,7 +181,7 @@ header{
 	}
 	
 
-	#header_content{
+	.header_content{
 		clear: both;
 	}
 
@@ -338,10 +339,16 @@ versão mobile (iphone 3-5)
 	}
 
 	dd{
+		font-size: 75%;
+
 		a{
 			font-size: 70%;	
 		}
-	}	
+	}
+
+	b{
+		font-size: 80%;
+	}
 
 	p{
 		font-size: 80%;
@@ -363,7 +370,7 @@ versão mobile (iphone 3-5)
 				}
 			}
 
-			#header_content{
+			.header_content{
 				width: 90%;
 			}
 		}
@@ -464,7 +471,7 @@ versão tablets
 			}
 		}
 
-		#header_content{
+		.header_content{
 			margin-top: $treemargin;
 			margin-bottom: $treemargin;
 		}
