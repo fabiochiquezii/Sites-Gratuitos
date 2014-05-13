@@ -267,18 +267,16 @@ footer{
 
 	#social{
 		margin-top:2em;
-		ul{
-			li{
-				font-size: 1.5em;
-
-				a{
-					color: $bodybg;
-
-					&:active{
-						color: white;
-					}
-				}
-			}
+		
+		.face{
+			padding: 0.5em 1em;
+			background: rgb(59,89,152);
+			font-size: 1.2em;
+			box-shadow: -4px 4px rgba(0,0,0,0.4);
+			border-radius: 5px;
+			color: white;
+			text-shadow: -2px 2px rgba(0,0,0,0.4);
+			font-weight: bold;
 		}
 	}
 }
@@ -296,6 +294,20 @@ versão mobile
 *************************************
 *************************************
 ************************************/
+@media only screen and (min-width: 1em){
+	footer{
+		.row{
+			#social{
+				.face{
+					&:active{
+						position: relative;
+						top: 2px;
+					}
+				}
+			}
+		}
+	}
+}
 
 @media only screen and (max-width: 40em) {
 
@@ -320,7 +332,17 @@ versão mobile
 				font-size: 90%;	
 			}
 		}
-	}	
+	}
+
+	footer{
+		#social{
+			margin-bottom:2em;
+			
+			.face{
+			}
+		}
+	}
+
 }
 
 /************************************
@@ -554,11 +576,10 @@ versão tablets
 	footer{
 		.row{
 			#social{
-				/*
-				ul{
-					float: right;
+				.face{
+					&:active{
+					}
 				}
-				*/
 			}
 		}
 
@@ -711,6 +732,17 @@ versão desktop
 		-moz-transform: scale(1);
 		-ms-transform: scale(1);
 		-o-transform: scale(1);
+	}
+
+	footer{
+		#social{
+			.face{
+				&:hover{
+					background: red;
+					color: $bodybg;
+				}
+			}
+		}
 	}
 
 }
